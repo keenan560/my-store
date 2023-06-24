@@ -9,14 +9,10 @@
  */
 
 import React from 'react';
-import {Text, View} from 'react-native';
+import {MainNavigation} from './src/navigation';
 
 const App = () => {
-  return (
-    <View>
-      <Text>Hello</Text>
-    </View>
-  );
+  return <MainNavigation />;
 };
 
 export default App;
