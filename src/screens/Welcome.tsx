@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 24,
     marginBottom: 24,
+    color: '#000',
   },
   subTitle: {
     fontFamily: 'Avenir',

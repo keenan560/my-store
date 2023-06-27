@@ -5,15 +5,24 @@ import explore from '../assets/explore.png';
 
 import Button from '../components/Button';
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Hello, associates!</Text>
-      <Button title="Sign in" />
+      <Button
+        title="Sign in"
+        onPress={() => navigation.navigate('dashboard')}
+      />
       <Image style={styles.image} source={signIn} />
       <View style={styles.cardContainer}>
         <Text style={{fontWeight: '200'}}>Guests</Text>
-        <Text style={{letterSpacing: 2, fontWeight: 'bold', marginBottom: 16}}>
+        <Text
+          style={{
+            letterSpacing: 2,
+            fontWeight: 'bold',
+            marginBottom: 16,
+            color: '#000',
+          }}>
           Explore jobs and learn about Walmart
         </Text>
         <View
@@ -48,6 +57,7 @@ const styles = StyleSheet.create({
     marginTop: 32,
     marginBottom: 32,
     fontSize: 20,
+    color: '#000',
   },
   image: {
     width: '100%',
