@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import {Card, Button} from '../components';
+import Bananas from '../assets/bananas.jpeg';
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Hello there!</Text>
     </View>
   );
 };

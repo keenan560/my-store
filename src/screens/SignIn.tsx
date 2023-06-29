@@ -4,16 +4,37 @@ import signIn from '../assets/signin.png';
 import explore from '../assets/explore.png';
 
 import Button from '../components/Button';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const SignIn = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello, associates!</Text>
-      <Button
-        title="Sign in"
-        onPress={() => navigation.navigate('dashboard')}
-      />
-      <Image style={styles.image} source={signIn} />
+      <View
+        style={{
+          backgroundColor: '#fff',
+          width: '100%',
+          alignItems: 'center',
+          marginBottom: 24,
+        }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            alignSelf: 'flex-end',
+            marginRight: 24,
+            marginTop: 16,
+          }}>
+          <MaterialCommunityIcons name="earth" size={26} />
+          <Text>EN</Text>
+        </View>
+
+        <Text style={styles.title}>Hello, associates!</Text>
+        <Button
+          title="Sign in"
+          onPress={() => navigation.navigate('dashboard')}
+        />
+        <Image style={styles.image} source={signIn} />
+      </View>
       <View style={styles.cardContainer}>
         <Text style={{fontWeight: '200'}}>Guests</Text>
         <Text
@@ -61,7 +82,6 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    marginBottom: 24,
     marginTop: 24,
   },
   cardContainer: {

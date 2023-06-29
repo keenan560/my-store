@@ -8,6 +8,7 @@ import Me from './Me';
 import AskSam from './AskSam';
 import MyTeam from './MyTeam';
 import Inbox from './Inbox';
+import ItemInfo from './ItemInfo';
 
 export {
   Welcome,
@@ -20,4 +21,5 @@ export {
   AskSam,
   MyTeam,
   Inbox,
+  ItemInfo,
 };

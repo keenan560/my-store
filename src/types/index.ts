@@ -7,3 +7,12 @@ export type ButtonProps = {
   borderWidth: number | undefined;
   onPress: () => void;
 };
+
+export type CardProps = {
+  title: string;
+  body: string;
+  img: string | undefined;
+  buttonTitle: string | undefined;
+  price: string | undefined;
+  upc: number | undefined;
+};
