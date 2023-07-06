@@ -4,7 +4,7 @@ import {
 } from '@react-navigation/drawer';
 import React from 'react';
 import Dashboard from './Dashboard';
-import {Me, ItemInfo} from '../screens';
+import {Me, ItemInfo, ShelfAvailability} from '../screens';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {View} from 'react-native';
 
@@ -32,10 +32,18 @@ const MyDrawer = () => {
       />
       <Drawer.Screen
         name="Shelf Availability"
-        component={Dashboard}
+        component={ShelfAvailability}
         options={{
           headerTitle: 'Shelf Availability',
           headerTitleStyle: {color: '#fff'},
+          headerRight: () => (
+            <MaterialCommunityIcons
+              name="printer-outline"
+              size={26}
+              color="#fff"
+              style={{marginRight: 16}}
+            />
+          ),
           drawerIcon: ({focused, size}) => (
             <MaterialCommunityIcons name="bookshelf" size={26} />
           ),
