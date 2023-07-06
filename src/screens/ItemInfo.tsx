@@ -7,7 +7,7 @@ import {
 } from '../components';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const ItemInfo = () => {
+const ItemInfo = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <ItemInfoCard />
@@ -19,6 +19,7 @@ const ItemInfo = () => {
           size={26}
           color="#fff"
           style={{padding: 8}}
+          onPress={() => navigation.navigate('barcode-scanner')}
         />
       </TouchableOpacity>
     </ScrollView>
@@ -29,7 +30,6 @@ export default ItemInfo;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
   },
   scanButton: {

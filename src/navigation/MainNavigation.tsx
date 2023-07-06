@@ -1,13 +1,15 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Welcome, Microphone, FirstPin, ConfirmPin, SignIn} from '../screens';
-import Dashboard from './Dashboard';
 import MyDrawer from './MyDrawer';
+import {BarcodeScanner} from '../utils';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {TouchableOpacity} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
-const MainNavigation = () => {
+const MainNavigation = ({navigation}) => {
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -22,6 +24,18 @@ const MainNavigation = () => {
           name="dashboard"
           component={MyDrawer}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="barcode-scanner"
+          component={BarcodeScanner}
+          options={{
+            // headerLeft: ({canGoBack}) => (
+            //   <TouchableOpacity onPress={() => canGoBack}>
+            //     <MaterialCommunityIcons name="close" size={26} color="#fff" />
+            //   </TouchableOpacity>
+            // ),
+            headerStyle: {backgroundColor: '#2a74d5'},
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>

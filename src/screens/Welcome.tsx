@@ -17,7 +17,7 @@ const Welcome = ({navigation}) => {
       <Button
         title="Continue"
         onPress={() => {
-          navigation.navigate('microphone');
+          navigation.navigate('dashboard');
         }}
       />
     </View>
