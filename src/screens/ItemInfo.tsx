@@ -1,20 +1,27 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import {Card} from '../components';
-import Bananas from '../assets/bananas.jpeg';
+import {View, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
+import {
+  ItemInfoCard,
+  ItemInventoryCard,
+  ItemProfitMarginCard,
+} from '../components';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const ItemInfo = () => {
   return (
-    <View>
-      <Card
-        img={Bananas}
-        title={'Bananas'}
-        body={'pack of bannas from dept 92'}
-        buttonTitle={'Order'}
-        price={'.98'}
-        upc={4011}
-      />
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+      <ItemInfoCard />
+      <ItemInventoryCard />
+      <ItemProfitMarginCard />
+      <TouchableOpacity style={styles.scanButton}>
+        <MaterialCommunityIcons
+          name="barcode-scan"
+          size={26}
+          color="#fff"
+          style={{padding: 8}}
+        />
+      </TouchableOpacity>
+    </ScrollView>
   );
 };
 
@@ -24,6 +31,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#fff',
+  },
+  scanButton: {
+    backgroundColor: '#2a74d5',
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 70,
+    position: 'absolute',
+    top: '67%',
+    right: 20,
+    height: 70,
   },
 });

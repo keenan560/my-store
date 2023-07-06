@@ -6,7 +6,17 @@ import Bananas from '../assets/bananas.jpeg';
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Hello there!</Text>
+      <Text style={{fontWeight: 'bold', fontSize: 22, alignSelf: 'flex-start'}}>
+        <Text
+          style={{
+            textDecorationLine: 'underline',
+            textDecorationStyle: 'solid',
+            textDecorationColor: 'orange',
+          }}>
+          Hey
+        </Text>{' '}
+        there, Chris!
+      </Text>
     </View>
   );
 };

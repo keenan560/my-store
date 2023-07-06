@@ -6,7 +6,7 @@ import React from 'react';
 import Dashboard from './Dashboard';
 import {Me, ItemInfo} from '../screens';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {Item} from 'react-native-paper/lib/typescript/src/components/Drawer/Drawer';
+import {View} from 'react-native';
 
 const Drawer = createDrawerNavigator();
 
@@ -45,8 +45,25 @@ const MyDrawer = () => {
         name="Item Info"
         component={ItemInfo}
         options={{
-          headerTitle: 'Item Info',
+          headerTitle: 'Item Information',
           headerTitleStyle: {color: '#fff'},
+          headerRight: () => (
+            <View
+              style={{
+                width: '40%',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginRight: 16,
+              }}>
+              <MaterialCommunityIcons name="magnify" size={26} color="#fff" />
+              <MaterialCommunityIcons
+                name="printer-outline"
+                size={26}
+                color="#fff"
+              />
+            </View>
+          ),
           drawerIcon: ({focused, size}) => (
             <MaterialCommunityIcons name="barcode-scan" size={26} />
           ),
