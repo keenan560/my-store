@@ -16,3 +16,10 @@ export type CardProps = {
   price: string | undefined;
   upc: number | undefined;
 };
+
+export type PinpointDeptProps = {
+  name: string;
+  problems: number;
+  solved: number;
+  favorite?: boolean;
+};

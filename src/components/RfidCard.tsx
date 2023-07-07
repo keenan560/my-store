@@ -8,8 +8,8 @@ const RfidCard = () => {
     <View style={styles.container}>
       <Image source={rfidImg} style={styles.img} />
       <TouchableOpacity style={{width: 200}}>
-        <Text>
-          It looks like Rfid is availabble for this store.{' '}
+        <Text style={{letterSpacing: 2}}>
+          It looks like Rfid is enabled for this store.{' '}
           <Text style={{color: '#2a74d5', fontWeight: '700'}}>
             Stat rfid scan
           </Text>
@@ -32,10 +32,6 @@ const styles = StyleSheet.create({
     marginVertical: 16,
     padding: 24,
     borderRadius: 8,
-  },
-  img: {
-    width: 70,
-    height: 70,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -44,6 +40,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 4.65,
 
-    elevation: 8,
+    elevation: 5,
+  },
+  img: {
+    width: 45,
+    height: 45,
+    borderRadius: 8,
   },
 });

@@ -37,11 +37,19 @@ const ItemInventoryCard = () => {
           marginBottom: 16,
         }}>
         <Button
-          title="Edit"
+          title="Item out of stock"
           backgroundColor="#fff"
           color="#000"
           borderWidth={1}
         />
+        <View style={{marginLeft: 16}}>
+          <Button
+            title="View all locations"
+            backgroundColor="#fff"
+            color="#000"
+            borderWidth={1}
+          />
+        </View>
       </View>
     </View>
   );

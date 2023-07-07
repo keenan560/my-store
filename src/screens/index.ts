@@ -10,6 +10,7 @@ import MyTeam from './MyTeam';
 import Inbox from './Inbox';
 import ItemInfo from './ItemInfo';
 import ShelfAvailability from './ShelfAvailability';
+import Pinpoint from './Pinpoint';
 
 export {
   Welcome,
@@ -24,4 +25,5 @@ export {
   Inbox,
   ItemInfo,
   ShelfAvailability,
+  Pinpoint,
 };

@@ -4,7 +4,7 @@ import {
 } from '@react-navigation/drawer';
 import React from 'react';
 import Dashboard from './Dashboard';
-import {Me, ItemInfo, ShelfAvailability} from '../screens';
+import {Me, ItemInfo, ShelfAvailability, Pinpoint} from '../screens';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {View} from 'react-native';
 
@@ -79,9 +79,9 @@ const MyDrawer = () => {
       />
       <Drawer.Screen
         name="Pin Point"
-        component={Dashboard}
+        component={Pinpoint}
         options={{
-          headerTitle: 'Pin Point',
+          headerTitle: 'Pinpoint',
           headerTitleStyle: {color: '#fff'},
           drawerIcon: ({focused, size}) => (
             <MaterialCommunityIcons name="map-marker" size={26} />
