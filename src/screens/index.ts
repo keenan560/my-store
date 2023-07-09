@@ -11,6 +11,7 @@ import Inbox from './Inbox';
 import ItemInfo from './ItemInfo';
 import ShelfAvailability from './ShelfAvailability';
 import Pinpoint from './Pinpoint';
+import Settings from './Settings';
 
 export {
   Welcome,
@@ -26,4 +27,5 @@ export {
   ItemInfo,
   ShelfAvailability,
   Pinpoint,
+  Settings,
 };

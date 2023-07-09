@@ -2,20 +2,29 @@ import React from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Me, HomeScreen, AskSam, MyTeam, Inbox} from '../screens';
-import MyDrawer from './MyDrawer';
 
 const Tab = createMaterialBottomTabNavigator();
 
 const Dashboard = () => {
   return (
-    <Tab.Navigator activeColor="#2a74d5" barStyle={{backgroundColor: '#fff'}}>
+    <Tab.Navigator
+      activeColor="#2a74d5"
+      barStyle={{backgroundColor: '#fff'}}
+      initialRouteName="Home"
+      screenOptions={{
+        title: 'No',
+      }}>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons
+              name="home-outline"
+              color={color}
+              size={26}
+            />
           ),
         }}
       />

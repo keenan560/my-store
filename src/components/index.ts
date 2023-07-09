@@ -5,6 +5,7 @@ import ItemProfitMarginCard from './ItemProfitMarginCard';
 import RfidCard from './RfidCard';
 import PinpointSubTitle from './PinpointSubTitle';
 import PinpointDept from './PinpointDept';
+import AskModal from './AskModal';
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   RfidCard,
   PinpointSubTitle,
   PinpointDept,
+  AskModal,
 };
