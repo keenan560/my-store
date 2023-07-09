@@ -7,7 +7,7 @@ const RfidCard = () => {
   return (
     <View style={styles.container}>
       <Image source={rfidImg} style={styles.img} />
-      <TouchableOpacity style={{width: 200}}>
+      <TouchableOpacity style={{width: 200, marginLeft: 24}}>
         <Text style={{letterSpacing: 2}}>
           It looks like Rfid is enabled for this store.{' '}
           <Text style={{color: '#2a74d5', fontWeight: '700'}}>
@@ -24,7 +24,7 @@ export default RfidCard;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     backgroundColor: '#fff',
     alignItems: 'center',
     width: '90%',
