@@ -11,8 +11,8 @@ const Welcome = ({navigation}) => {
       <Image style={styles.image} source={help} />
       <Text style={styles.title}>Welcome to Me@Walmart</Text>
       <Text style={styles.subTitle}>
-        Thanks for downloading the app, you're going to love it! There a couple
-        of things to set up so the app is just right for you.
+        Thanks for downloading the app, you're going to love it! There's a
+        couple of things to set up so the app is just right for you.
       </Text>
       <Button
         title="Continue"
