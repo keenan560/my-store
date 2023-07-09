@@ -38,171 +38,188 @@ const HomeScreen = () => {
         </Text>
         <Text>Week 22</Text>
       </View>
-      <Text style={{fontWeight: '700', marginLeft: 16}}>Store's Metrics</Text>
-      <ScrollView
-        showsHorizontalScrollIndicator={false}
-        horizontal={true}
-        snapToAlignment="end"
-        contentContainerStyle={{
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginLeft: '16%',
-        }}>
-        <View style={styles.metricCard}>
-          <Text
-            style={{
-              fontWeight: '700',
-              marginBottom: 8,
-            }}>
-            Financials
-          </Text>
-          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-            <View
-              style={{
-                flexDirection: 'column',
-                marginRight: 32,
-              }}>
-              <Text style={{fontWeight: '600'}}>Sales</Text>
-              <Text style={{fontWeight: '300'}}>This Year</Text>
-              <Text style={{fontWeight: '600'}}>$40,000.00</Text>
-              <Text style={{color: 'green'}}>
-                +20%{' '}
-                <MaterialCommunityIcons
-                  name="chart-line-variant"
-                  color="green"
-                  size={26}
-                />
-              </Text>
-              <Text style={{fontWeight: '300'}}>Total</Text>
-            </View>
-            <View
-              style={{
-                flexDirection: 'column',
-                borderLeftWidth: 1,
-                paddingLeft: 8,
-                borderLeftColor: '#f6f3f7',
-              }}>
-              <Text style={{fontWeight: '600'}}>Markdowns</Text>
-              <Text style={{fontWeight: '600'}}>$2,035.00</Text>
-              <Text style={{fontWeight: '300'}}>Total Markdowns</Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.metricCard}>
-          <Text
-            style={{
-              fontWeight: '700',
-              marginBottom: 8,
-            }}>
-            Inventory
-          </Text>
-          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-            <View
-              style={{
-                flexDirection: 'column',
-                marginRight: 32,
-              }}>
-              <Text style={{fontWeight: '300'}}>OSCA</Text>
-              <Text style={{fontWeight: '300'}}>Yesterday</Text>
-              <Text style={{fontWeight: '600'}}>1,500</Text>
-              <Text style={{color: 'red'}}>
-                22.5%{' '}
-                <MaterialCommunityIcons
-                  name="chart-line-variant"
-                  color="red"
-                  size={26}
-                />
-              </Text>
-              <Text style={{fontWeight: '300'}}>Total</Text>
-            </View>
-            <View
-              style={{
-                flexDirection: 'column',
-                borderLeftWidth: 1,
-                paddingLeft: 8,
-                borderLeftColor: '#f6f3f7',
-              }}>
-              <Text style={{fontWeight: '600'}}>Markdowns</Text>
-              <Text>$2,035.00</Text>
-              <Text style={{fontWeight: '300'}}>Total Markdowns</Text>
-            </View>
-          </View>
-        </View>
-      </ScrollView>
-      <View style={styles.cardBody}>
-        <Text style={{fontWeight: '300'}}>Your schedule</Text>
-        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-          <Text
-            style={{
-              fontWeight: '700',
-              marginBottom: 8,
-              fontSize: 18,
-            }}>
-            React Native Developer
-          </Text>
-          <Text
-            style={{
-              backgroundColor: '#ecf3eb',
-              alignSelf: 'center',
-              padding: 4,
-            }}>
-            8.00h
-          </Text>
-        </View>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <MaterialCommunityIcons
-            name="clock-outline"
-            size={22}
-            style={{marginRight: 8}}
-          />
-          <Text>8:00am - 5:00pm</Text>
-        </View>
-        <View
-          style={{
-            flexDirection: 'row',
+      <Text style={{fontWeight: '700', marginLeft: 16, marginBottom: 32}}>
+        Store's Metrics
+      </Text>
+      <View>
+        <ScrollView
+          style={{marginBottom: 16}}
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}
+          snapToAlignment="end"
+          contentContainerStyle={{
             alignItems: 'center',
-            marginBottom: 16,
+            justifyContent: 'center',
+            marginLeft: '16%',
+            marginHorizontal: 16,
           }}>
-          <MaterialCommunityIcons
-            name="silverware-fork-knife"
-            size={22}
-            style={{marginRight: 8}}
-          />
-          <Text>12:00pm - 1:00pm</Text>
-        </View>
-        <TouchableOpacity>
-          <Text style={{textDecorationLine: 'underline'}}>
-            View full schedule
-          </Text>
-        </TouchableOpacity>
+          <View style={styles.metricCard}>
+            <Text
+              style={{
+                fontWeight: '700',
+                marginBottom: 8,
+              }}>
+              Financials
+            </Text>
+            <View
+              style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+              <View
+                style={{
+                  flexDirection: 'column',
+                  marginRight: 32,
+                }}>
+                <Text style={{fontWeight: '600'}}>Sales</Text>
+                <Text style={{fontWeight: '300'}}>This Year</Text>
+                <Text style={{fontWeight: '600'}}>$40,000.00</Text>
+                <Text style={{color: 'green'}}>
+                  +20%{' '}
+                  <MaterialCommunityIcons
+                    name="chart-line-variant"
+                    color="green"
+                    size={26}
+                  />
+                </Text>
+                <Text style={{fontWeight: '300'}}>Total</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'column',
+                  borderLeftWidth: 1,
+                  paddingLeft: 8,
+                  borderLeftColor: '#f6f3f7',
+                }}>
+                <Text style={{fontWeight: '600'}}>Markdowns</Text>
+                <Text style={{fontWeight: '600'}}>$2,035.00</Text>
+                <Text style={{fontWeight: '300'}}>Total Markdowns</Text>
+              </View>
+            </View>
+          </View>
+          <View style={styles.metricCard}>
+            <Text
+              style={{
+                fontWeight: '700',
+                marginBottom: 8,
+              }}>
+              Inventory
+            </Text>
+            <View
+              style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+              <View
+                style={{
+                  flexDirection: 'column',
+                  marginRight: 32,
+                }}>
+                <Text style={{fontWeight: '300'}}>OSCA</Text>
+                <Text style={{fontWeight: '300'}}>Yesterday</Text>
+                <Text style={{fontWeight: '600'}}>1,500</Text>
+                <Text style={{color: 'red'}}>
+                  22.5%{' '}
+                  <MaterialCommunityIcons
+                    name="chart-line-variant"
+                    color="red"
+                    size={26}
+                  />
+                </Text>
+                <Text style={{fontWeight: '300'}}>Total</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'column',
+                  borderLeftWidth: 1,
+                  paddingLeft: 8,
+                  borderLeftColor: '#f6f3f7',
+                }}>
+                <Text style={{fontWeight: '600'}}>Markdowns</Text>
+                <Text>$2,035.00</Text>
+                <Text style={{fontWeight: '300'}}>Total Markdowns</Text>
+              </View>
+            </View>
+          </View>
+        </ScrollView>
       </View>
-      <View style={styles.cardBody}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginBottom: 14,
-          }}>
-          <Image
-            style={{width: 48, height: 48, borderRadius: 100, marginRight: 16}}
-            source={headshot}
-          />
-          <View>
-            <Text style={{fontWeight: '300'}}>Current status</Text>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={styles.cardBody}>
+          <Text style={{fontWeight: '300'}}>Your schedule</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text
               style={{
                 fontWeight: '700',
                 marginBottom: 8,
                 fontSize: 18,
               }}>
-              Clocked in
+              React Native Developer
+            </Text>
+            <Text
+              style={{
+                backgroundColor: '#ecf3eb',
+                alignSelf: 'center',
+                padding: 4,
+              }}>
+              8.00h
             </Text>
           </View>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <MaterialCommunityIcons
+              name="clock-outline"
+              size={22}
+              style={{marginRight: 8}}
+            />
+            <Text>8:00am - 5:00pm</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginBottom: 16,
+            }}>
+            <MaterialCommunityIcons
+              name="silverware-fork-knife"
+              size={22}
+              style={{marginRight: 8}}
+            />
+            <Text>12:00pm - 1:00pm</Text>
+          </View>
+          <TouchableOpacity>
+            <Text style={{textDecorationLine: 'underline'}}>
+              View full schedule
+            </Text>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity>
-          <Text style={{textDecorationLine: 'underline'}}>View timeclock</Text>
-        </TouchableOpacity>
-      </View>
+        <View style={styles.cardBody}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginBottom: 14,
+            }}>
+            <Image
+              style={{
+                width: 48,
+                height: 48,
+                borderRadius: 100,
+                marginRight: 16,
+              }}
+              source={headshot}
+            />
+            <View>
+              <Text style={{fontWeight: '300'}}>Current status</Text>
+              <Text
+                style={{
+                  fontWeight: '700',
+                  marginBottom: 8,
+                  fontSize: 18,
+                }}>
+                Clocked in
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity>
+            <Text style={{textDecorationLine: 'underline'}}>
+              View timeclock
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
     </View>
   );
 };
