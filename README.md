@@ -10,7 +10,7 @@ react-native, react-native-camera, react-native-camera-hooks,@react-navigation, 
 
 ## Instructions
 
-1. Clone the reop `git clone https://github.com/keenan560/my-store.git && cd myStore`
+1. Clone the reop `git clone https://github.com/keenan560/my-store.git && cd my-store`
 2. Install your dependencies for android and iOS `npm install && npx pod-install`
 3. To start app in android run `npm run android`. For iOS run `npm run ios`
    * If you experience build issues you may need to build the project in android studio and xcode.
