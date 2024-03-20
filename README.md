@@ -14,6 +14,21 @@ react-native, react-native-camera, react-native-camera-hooks,@react-navigation, 
 2. Install your dependencies for android and iOS `npm install && npx pod-install`
 3. To start app in android run `npm run android`. For iOS run `npm run ios`
    * If you experience build issues you may need to build the project in android studio and xcode.
+  
+## Troubleshooting
+
+react-native-camera is deprecated and no longer supported. If trying to access the phone's camera you get an error, please do the following:
+1. Install deprecated-react-native-prop-types: `npm install deprecated-react-native-prop-types`
+2. Locate the file where react-native-camera is imported (node_modules/react-native-camera/src/index.js). Replace the import statement for ViewPropTypes with the one from deprecated-react-native-prop-types:
+
+
+// Replace this import:
+`import { ViewPropTypes } from 'react-native';`
+
+// With this import:
+`import { ViewPropTypes } from 'deprecated-react-native-prop-types';`
+
+
 
 ## Screenshots
 <img src="https://github.com/keenan560/my-store/assets/44299306/b7554e5f-a619-4ecd-b7e5-0fa0e612f612" width='300'/>
